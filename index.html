@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aman Chauhan – HR Professional</title>
+<meta name="description" content="Aman Chauhan, HR professional with 2+ years in talent acquisition, onboarding, employee relations and engagement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F6F5;--ink:#10272B;--mute:#4D6468;--teal:#1B6B66;--soft:#DCE9E6;--gold:#E0A338;--line:#C5D5D2;--w:1040px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "Source Sans 3",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Source Sans 3",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:var(--teal)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 1.5rem}
+section{padding:4.5rem 0 0}
+h2{font-size:clamp(1.7rem,3.5vw,2.3rem);font-weight:700;margin-bottom:1.5rem}
+p{max-width:68ch;margin:0 0 1rem}
+
+nav{position:sticky;top:0;background:rgba(243,246,245,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:1.5rem;align-items:center;height:3.5rem}
+nav b{font-family:"Bricolage Grotesque",sans-serif;font-size:1.1rem;margin-right:auto}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--teal)}
+@media(max-width:640px){nav a.opt{display:none}}
+
+.hero{padding-top:4rem;display:grid;grid-template-columns:1fr 280px;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(3rem,9vw,5.8rem);font-weight:800;letter-spacing:-.03em}
+.hero .role{font-family:"Bricolage Grotesque",sans-serif;font-size:1.35rem;font-weight:500;color:var(--teal);margin:1rem 0 1.25rem}
+.hero img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;border:4px solid var(--ink);box-shadow:10px 10px 0 var(--gold)}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.btn{display:inline-block;padding:.7rem 1.25rem;border-radius:.4rem;font-weight:600;text-decoration:none;border:2px solid var(--ink);color:var(--ink)}
+.btn.main{background:var(--ink);color:#fff}
+.btn:hover{background:var(--gold);border-color:var(--ink);color:var(--ink)}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:2rem}.hero img{max-width:220px;order:-1}}
+
+/* lifecycle: the page's one memorable element */
+.track{display:flex;gap:0;margin:0 0 1.5rem;padding:0;list-style:none;overflow-x:auto;border-bottom:3px solid var(--ink)}
+.track button{all:unset;cursor:pointer;padding:.9rem 1.25rem;font:600 1rem "Bricolage Grotesque",sans-serif;white-space:nowrap;position:relative;color:var(--mute)}
+.track button:hover{color:var(--ink)}
+.track button[aria-selected=true]{color:#fff;background:var(--ink)}
+.track button:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.panel{background:#fff;border:1px solid var(--line);border-left:8px solid var(--gold);padding:1.5rem 1.75rem;min-height:9rem}
+.panel h3{font-size:1.4rem;margin-bottom:.5rem}
+.panel p{margin:0}
+
+.job{border-top:1px solid var(--line);padding:1.5rem 0;display:grid;grid-template-columns:200px 1fr;gap:2rem}
+.job:last-of-type{border-bottom:1px solid var(--line)}
+.job time{color:var(--mute);font-weight:600}
+.job h3{font-size:1.3rem}
+.job .co{color:var(--teal);font-weight:600;margin:.15rem 0 .75rem}
+.job ul{margin:0;padding-left:1.1rem;max-width:68ch}
+.job li{margin-bottom:.5rem}
+@media(max-width:700px){.job{grid-template-columns:1fr;gap:.25rem}}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.75rem}
+.skills h3{font-size:1.1rem;margin-bottom:.6rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:0;padding:0;list-style:none}
+.chips li{background:var(--soft);padding:.3rem .75rem;border-radius:2rem;font-size:.95rem}
+
+.edu{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.75rem}
+.edu h3{font-size:1.15rem}
+.edu p{margin:.15rem 0;color:var(--mute)}
+.medal{margin-top:2rem;background:var(--ink);color:#fff;padding:1.5rem 1.75rem;border-radius:.4rem}
+.medal h3{color:var(--gold);font-size:1.25rem;margin-bottom:.35rem}
+.medal p{margin:0}
+
+.contact{background:var(--soft);margin-top:4.5rem;padding:3.5rem 0}
+.contact h2{margin-bottom:.75rem}
+.contact ul{list-style:none;margin:1.25rem 0 0;padding:0;font-size:1.15rem}
+.contact li{margin-bottom:.4rem}
+footer{padding:1.5rem 0;color:var(--mute);font-size:.9rem}
+footer p{margin:0}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>Aman Chauhan</b><a class="opt" href="#approach">Approach</a><a class="opt" href="#experience">Experience</a><a class="opt" href="#skills">Skills</a><a class="opt" href="#education">Education</a><a href="#contact">Contact</a></div></nav>
+
+<main>
+<div class="wrap hero">
+  <div>
+    <h1>Aman Chauhan</h1>
+    <p class="role">Human Resource Management</p>
+    <p>I’m an HR professional with more than two years of experience across the employee lifecycle: hiring, onboarding, engagement and offboarding. I like keeping many priorities moving accurately in fast-paced teams.</p>
+    <div class="btns">
+      <a class="btn main" href="assets/Aman_Chauhan_CV.pdf" download>Download CV</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <img src="assets/aman.jpg" alt="Portrait of Aman Chauhan" width="280" height="280">
+</div>
+
+<section id="approach"><div class="wrap">
+  <h2>HR across the whole employee lifecycle</h2>
+  <ul class="track" role="tablist" aria-label="Employee lifecycle stages" id="tabs"></ul>
+  <div class="panel" id="panel" role="tabpanel" aria-live="polite"></div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <article class="job">
+    <time>Nov 2023 – Jun 2026</time>
+    <div>
+      <h3>Human Resources</h3>
+      <p class="co">IndusInd Bank Limited</p>
+      <ul>
+        <li>Managed end-to-end HR functions in banking and financial services, including talent acquisition, performance management, employee relations and onboarding.</li>
+        <li>Sourced and screened candidates, coordinated onboarding and offboarding, and supported engagement initiatives that strengthen retention.</li>
+        <li>Worked in the Workline HR Portal and kept employee records accurate while balancing multiple priorities.</li>
+      </ul>
+    </div>
+  </article>
+  <article class="job">
+    <time>Jun 2019 – Aug 2019</time>
+    <div>
+      <h3>Intern, Employee Engagement, Training and Development</h3>
+      <p class="co">Reliance JioInfocomm Limited</p>
+      <ul>
+        <li>Supported human capital management across talent acquisition, employee relations, performance management, HR compliance and organisational development.</li>
+      </ul>
+    </div>
+  </article>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills and tools</h2>
+  <div class="skills">
+    <div><h3>Talent acquisition</h3><ul class="chips"><li>End-to-end recruitment</li><li>Sourcing and screening</li><li>Onboarding</li><li>Offboarding</li></ul></div>
+    <div><h3>Employee lifecycle</h3><ul class="chips"><li>Performance management</li><li>Employee relations</li><li>Conflict resolution</li><li>Engagement and retention</li></ul></div>
+    <div><h3>Tools</h3><ul class="chips"><li>Workline HR Portal</li><li>Naukri.com</li><li>Employee records management</li><li>Microsoft Excel</li><li>Word</li><li>PowerPoint</li><li>Data analytics</li></ul></div>
+    <div><h3>Working style</h3><ul class="chips"><li>Communication</li><li>Interpersonal skills</li><li>Multitasking</li><li>Continuous improvement</li></ul></div>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <h2>Education</h2>
+  <div class="edu">
+    <div><h3>Master of Business Administration (MBA)</h3><p>Lovely Professional University (LPU), Punjab</p><p>2026 – Present</p></div>
+    <div><h3>Bachelor of Business Administration</h3><p>Poornima University, Jaipur</p><p>2016 – 2019</p></div>
+  </div>
+  <div class="medal"><h3>Gold Medalist, Bachelor of Business Administration</h3><p>Awarded the Gold Medal for the highest academic performance in the graduating batch.</p></div>
+</div></section>
+</main>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2>Let’s talk about your hiring or people goals</h2>
+  <p>I’m open to HR roles in talent acquisition, onboarding and employee engagement.</p>
+  <ul>
+    <li>Email: <a href="mailto:amansingh820930@gmail.com">amansingh820930@gmail.com</a></li>
+    <li>Phone: <a href="tel:+917374803505">+91 7374803505</a></li>
+    <li>LinkedIn: <a href="https://www.linkedin.com/in/aman-chauhan0112">linkedin.com/in/aman-chauhan0112</a></li>
+  </ul>
+</div></section>
+<footer><div class="wrap"><p>© 2026 Aman Chauhan</p></div></footer>
+
+<script>
+const stages=[
+ ["Source and screen","I source and screen candidates and support end-to-end recruitment, using tools like Naukri.com to find people who fit the role."],
+ ["Onboard","I coordinate smooth onboarding so new joiners get the right information, records and support from their first day."],
+ ["Engage and retain","I run engagement initiatives that help employees stay motivated and support retention."],
+ ["Perform","I support performance management so expectations, feedback and outcomes stay clear for employees and managers."],
+ ["Resolve","I handle employee relations and conflict resolution with strong communication and interpersonal skills."],
+ ["Offboard","I manage offboarding and employee records accurately, so exits are orderly and well documented."]
+];
+const tabs=document.getElementById('tabs'),panel=document.getElementById('panel');
+function show(i){
+  [...tabs.children].forEach((li,j)=>{const b=li.firstChild;b.setAttribute('aria-selected',j===i);b.tabIndex=j===i?0:-1});
+  panel.innerHTML='<h3></h3><p></p>';panel.firstChild.textContent=stages[i][0];panel.lastChild.textContent=stages[i][1];
+}
+stages.forEach((s,i)=>{
+  const li=document.createElement('li'),b=document.createElement('button');
+  b.type='button';b.role='tab';b.textContent=s[0];
+  b.onclick=()=>show(i);
+  b.onkeydown=e=>{
+    let n=null;
+    if(e.key==='ArrowRight')n=(i+1)%stages.length;
+    if(e.key==='ArrowLeft')n=(i-1+stages.length)%stages.length;
+    if(n!==null){show(n);tabs.children[n].firstChild.focus()}
+  };
+  li.appendChild(b);tabs.appendChild(li);
+});
+show(0);
+</script>
+</body>
+</html>
